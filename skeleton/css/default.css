@@ -1,0 +1,118 @@
+
+body {
+/*background: url(../images/orange-banner.jpg) no-repeat center center !important;*/
+/*color: #000000 !important;
+/*background-color: #134685 !important;*/
+/*border-top:15px solid #CCCCCC;
+
+height:6px;
+padding:0;
+text-align:left;
+*/
+}
+
+
+#pageContent {
+	background: url(../images/red-background.jpg) no-repeat center top;
+	background-repeat:repeat-x;
+	margin-top: -30px;
+	position: relative;
+}
+
+#menu {
+	margin-left: -40px;
+}
+
+
+#menu ul {
+    padding: 10px 0 0;
+    list-style-type: none;
+    font-family: Georgia, Times, serif;
+    text-transform: uppercase;
+    font-size: 1.4em;
+	vertical-align: bottom;
+}
+
+#menu li {
+    float: left;
+}
+
+#menu ul a:link,
+#menu ul a:visited {
+    text-decoration: none;
+    font-weight: bold;
+    padding: 30px 15px;
+    vertical-align: bottom;
+}
+
+#menu ul a:hover {
+    color:#e6bc1f;
+}
+
+#menu ul a{
+	color: black;
+}
+
+#breadcrumbs {
+	color: #e6bc1f;
+}
+
+#left {
+	text-align: justify;
+	padding: 30px 30px 30px 30px;
+}
+
+#right {
+	text-align: justify;
+	padding: 30px 30px 30px 30px;
+}
+
+#bottom{
+	background: #ffffff;
+	position:absolute;
+}
+
+#mainContent {
+	padding: 30px 30px 30px 30px;
+	text-align: center; 
+}
+
+#mainContent h3 {
+	text-align: left;
+}
+
+/*
+.logo {
+	position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+*/
+
+.embed-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16/9 ratio */
+    padding-top: 30px; /* IE6 workaround*/
+    height: 0;
+    overflow: hidden;
+}
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+/*
+#mainContent {
+	margin: 0 250px;
+	padding: 0 10px;
+	background: url(../images/orange-banner.jpg) no-repeat center center !important;
+}
+

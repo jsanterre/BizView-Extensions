@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension 	type="module"	version="2.5"	client="site"	method="upgrade">
+	<name>BizView Video</name>
+	<author>Julie Santerre</author>
+	<creationDate>February 2012</creationDate>
+	<description>Module to add a responsive YouTube video</description>
+	<files>
+		<filename module="mod_video">mod_video.php</filename>
+		<folder>tmpl</folder>
+		<folder>css</folder>
+		<filename>index.html</filename>		
+		<filename>mod_video.xml</filename>
+	</files>
+	<languages>
+	</languages>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field type="text" name="url" default="as1vlYPyq1c" label="YouTube Video ID:" />
+			</fieldset>
+		</fields>
+	</config>
+</extension>
