@@ -1,36 +1,73 @@
 
-body {
-/*background: url(../images/orange-banner.jpg) no-repeat center center !important;*/
-/*color: #000000 !important;
-/*background-color: #134685 !important;*/
-/*border-top:15px solid #CCCCCC;
+/* css for Responsive Zapp */
 
-height:6px;
-padding:0;
-text-align:left;
-*/
+html, body {
+    height: 100%;
+}
+	  
+/* Wrapper for page content to push down footer */
+#wrap {
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	/* Negative indent footer by it's height */
+	margin: 0 auto -60px;
+	padding-top: 70px;
+}
+	  
+/* Set the fixed height of the footer here */
+#push, #footer {
+    height: 60px;
 }
 
+#footer {
+	background-color: #000000;
+}
 
+/* top navbar behaviour changes on tablets and phones, so get rid of the no longer needed padding */
+/* potrait tablets */
+@media (min-width: 768px) and (max-width: 979px) {
+	#wrap {
+		margin: 0 auto -90px;
+		padding-top: 0px;
+	}
+}
+
+/* phones */
+@media (max-width: 767px){
+	#wrap {
+		margin: 0 auto -70px;
+		padding-top: 0px;
+	}
+	
+	#push, #footer {
+		height: 40px;
+	}
+}
+
+.bizview-login {
+	color: #E8BC05 !important;
+} 
+  
 #pageContent {
 	background: url(../images/red-background.jpg) no-repeat center top;
 	background-repeat:repeat-x;
-	margin-top: -30px;
+	/*margin-top: -30px;*/
 	position: relative;
+	margin-bottom: 30px;
 }
 
 #menu {
 	margin-left: -40px;
 }
 
-
 #menu ul {
     padding: 10px 0 0;
     list-style-type: none;
-    font-family: Georgia, Times, serif;
+    /*font-family: Georgia, Times, serif;*/
     text-transform: uppercase;
     font-size: 1.4em;
-	vertical-align: bottom;
+	/*vertical-align: bottom;*/
 }
 
 #menu li {
@@ -42,7 +79,7 @@ text-align:left;
     text-decoration: none;
     font-weight: bold;
     padding: 30px 15px;
-    vertical-align: bottom;
+    /*vertical-align: bottom;*/
 }
 
 #menu ul a:hover {
@@ -62,10 +99,6 @@ text-align:left;
   color: #ca3d43;
 }
 
-#breadcrumbs {
-	color: #e6bc1f;
-}
-
 #left {
 	text-align: justify;
 	padding: 30px 30px 30px 30px;
@@ -77,8 +110,7 @@ text-align:left;
 }
 
 #bottom{
-	background: #ffffff;
-	position:absolute;
+	/*background: #ffffff;*/
 }
 
 #mainContent {
@@ -100,11 +132,4 @@ text-align:left;
 }
 */
 
-
-/*
-#mainContent {
-	margin: 0 250px;
-	padding: 0 10px;
-	background: url(../images/orange-banner.jpg) no-repeat center center !important;
-}
 

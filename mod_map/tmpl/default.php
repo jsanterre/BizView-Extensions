@@ -11,6 +11,9 @@ $address = $params->get('address', "2nd Floor 472 Stradbrook Avenue Winnipeg");
     padding-top: 30px;
     height: 0;
     overflow: hidden;
+	border-style:solid; 
+	border-width:10px;
+	border-color:rgba(255, 255, 255, 0.3);
 }
 .embed-container iframe,
 .embed-container object,
@@ -24,5 +27,5 @@ $address = $params->get('address', "2nd Floor 472 Stradbrook Avenue Winnipeg");
 </style>
 
 <div class="embed-container">
-  <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.ca/maps?q=<?php echo $address; ?>&iwloc=near&amp;output=embed"></iframe>
+  <iframe scrolling="no" frameborder="0" marginheight="0" marginwidth="0" src="https://maps.google.ca/maps?q=<?php echo $address; ?>&iwloc=near&amp;output=embed"></iframe>
 </div>

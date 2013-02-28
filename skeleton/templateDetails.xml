@@ -19,7 +19,6 @@
 	
 	<positions>
 		<position>menu</position>
-		<position>breadcrumbs</position>
         <position>left</position>
         <position>right</position>
 		<position>bottom-left</position>

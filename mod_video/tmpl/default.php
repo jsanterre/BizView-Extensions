@@ -11,6 +11,9 @@ $videoId = $params->get('videoId', "as1vlYPyq1c");
     padding-top: 30px;
     height: 0;
     overflow: hidden;
+	border-style:solid; 
+	border-width:10px;
+	border-color:rgba(255, 255, 255, 0.3);
 }
 .embed-container iframe,
 .embed-container object,
@@ -24,5 +27,5 @@ $videoId = $params->get('videoId', "as1vlYPyq1c");
 </style>
 
 <div class="embed-container">
-	<iframe src="http://www.youtube.com/embed/<?php echo $videoId; ?>" frameborder="0"> </iframe>
+	<iframe src="http://www.youtube.com/embed/<?php echo $videoId; ?>"> </iframe>
 </div>
