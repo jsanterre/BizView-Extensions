@@ -6,17 +6,14 @@
 	<description>Module to add a responsive Google Map</description>
 	<files>
 		<filename module="mod_map">mod_map.php</filename>
-		<folder>tmpl</folder>
-		<folder>css</folder>
-		<filename>index.html</filename>		
 		<filename>mod_map.xml</filename>
+		<folder>tmpl</folder>
+		<filename>index.html</filename>	
 	</files>
-	<languages>
-	</languages>
 	<config>
 		<fields name="params">
 			<fieldset name="basic">
-				<field type="text" name="address" default="" label="Address" />
+				<field type="text" name="address" default="2nd Floor 472 Stradbrook Avenue Winnipeg" label="Address" />
 			</fieldset>
 		</fields>
 	</config>

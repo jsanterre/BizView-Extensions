@@ -162,9 +162,11 @@
 					<span class="icon-bar"></span>
 				</a>
 			-->
+			
 				<div class="nav-collapse collapse">
 					<jdoc:include type="modules" name="menu" style="none" />
 				</div>
+			
 			</div>
 			</div>
 			</nav>

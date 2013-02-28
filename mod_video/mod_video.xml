@@ -5,18 +5,15 @@
 	<creationDate>February 2012</creationDate>
 	<description>Module to add a responsive YouTube video</description>
 	<files>
-		<filename module="mod_video">mod_video.php</filename>
-		<folder>tmpl</folder>
-		<folder>css</folder>
-		<filename>index.html</filename>		
+		<filename module="mod_video">mod_video.php</filename>	
 		<filename>mod_video.xml</filename>
+		<folder>tmpl</folder>
+		<filename>index.html</filename>	
 	</files>
-	<languages>
-	</languages>
 	<config>
 		<fields name="params">
 			<fieldset name="basic">
-				<field type="text" name="url" default="as1vlYPyq1c" label="YouTube Video ID:" />
+				<field type="text" name="videoId" default="as1vlYPyq1c" label="YouTube Video ID:" />
 			</fieldset>
 		</fields>
 	</config>
