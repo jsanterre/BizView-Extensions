@@ -44,24 +44,37 @@
 					<span class="icon-bar"></span>  
 					<span class="icon-bar"></span>    
 				</a> 
+				
 				<a class="brand" title="BizView - Business - Local Business Directory - Winnipeg Manitoba" href="http://www.bizview.com/"><img src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/images/BizViewLogo.png" class="logo" alt="bizview"></a> 
+				
 				<form class="navbar-search pull-right hidden-phone" method="post" action="http://www.bizview.com/directory/directory-search.cfm">
 					<input type="text" class="search-query" maxlength="50" name="directory-search-keywords" placeholder="Search" data-provide="typeahead">
 				</form>
 
+				<!-- When we're on a phone, the search field doesn't fit in the top navbar so we move it here -->
+				<div class="row-fluid visible-phone" style="padding-bottom: 20px; padding-left: 13px; float:left;">
+					<div class="span2 offset1">
+						<form class="navbar-search" method="post" action="http://www.bizview.com/directory/directory-search.cfm">
+							<input type="text" class="search-query" maxlength="50" name="directory-search-keywords" placeholder="Search" data-provide="typeahead">
+						</form>
+					</div>
+				</div>
+				
 				<div class="nav-collapse">  
 					<ul class="nav pull-right" >  
-						<li><a href="http://www.bizview.com/directory/directory-search.cfm">bizview directory</a></li>  
+						<li><a class="bizview-directory" href="http://www.bizview.com/directory/directory-search.cfm">bizview directory</a></li>  
 						<li><a class="bizview-login modal-sml" href="http://www.bizview.com/directory/login.cfm?">login</a></li>  
+						
 					</ul>
 				</div><!--/.nav-collapse -->   
+				
 			</div>
 		</div>
 	</div>
 			
-	<div class="container-fluid">
+	<div class="container-fluid clientPage">
 	
-		<div id="menu">
+		<div id="desktop" class="menu hidden-phone hidden-tablet">
 			<div class="row-fluid">
 				<nav class="span12 navbar">
 					<div class="navbar inner">
@@ -73,17 +86,19 @@
 			</div>		
 		</div> 
 		
-		<!-- When we're on a phone, the search field doesn't fit in the top navbar so we move it here -->
-		<div class="row-fluid visible-phone" style="padding-bottom: 20px">
-			<div class="span2 offset1">
-				<form class="navbar-search" method="post" action="http://www.bizview.com/directory/directory-search.cfm">
-					<input type="text" class="search-query" maxlength="50" name="directory-search-keywords" placeholder="Search" data-provide="typeahead">
-				</form>
-			</div>
-		</div>
+		<div id="mobile" class="menu visible-phone visible-tablet">
+			<div class="row-fluid">
+				<nav class="span12 navbar">
+					<div class="navbar inner">
+						<div class="nav-collapse collapse">
+							<jdoc:include type="modules" name="menu" style="none" />
+						</div>	
+					</div>
+				</nav>
+			</div>		
+		</div> 
 		
 		<div id="pageContent"> 
-		
 			<div class="row-fluid">
 				<div class="span3" id="left">
 					<a title="BizView - Business - Local Business Directory - Winnipeg Manitoba"><img src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/images/CrockADoodleLogo.png" class="logo" alt="Crock A Doodle"></a>
