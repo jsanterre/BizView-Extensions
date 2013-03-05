@@ -4,6 +4,11 @@
 html, body {
     height: 100%;
 }
+
+.clientPage {
+	font-family: Verdana,Georgia,Serif !important;
+	color: #000000 !important;
+}
 	  
 /* Wrapper for page content to push down footer */
 #wrap {
@@ -89,7 +94,7 @@ html, body {
 .menu ul {
     padding: 10px 0 0;
     list-style-type: none;
-    font-family: Georgia, Times, serif;
+    /*font-family: Georgia, Times, serif;*/
     text-transform: uppercase;
 	vertical-align: top;
 }

@@ -17,7 +17,7 @@
 				<field type="text" name="address" default="" label="Address" />
 				<field type="text" name="city" default="Winnipeg" label="City" />
 				<field type="text" name="province" default="Manitoba" label="Province" />
-				<field type="text" name="postalCode" default="Manitoba" label="Postal Code" />
+				<field type="text" name="postalCode" default="" label="Postal Code" />
 				<field type="text" name="phone" default="" label="Phone Number" />
 				<field type="text" name="email" default="" label="Email Address" />
 			</fieldset>
