@@ -105,6 +105,10 @@ html, body {
     color: #ca3d43;
 }
 
+#desktop ul a:hover {
+    color: #ca3d43;
+}
+
 .menu ul a{
 	color: black;
 }
@@ -133,7 +137,7 @@ html, body {
 }
 
 /* Styling specific to desktop for drop down menu*/
-
+/*
 #desktop ul li a {
     display: block;
     text-decoration: none;
@@ -149,7 +153,7 @@ html, body {
 #desktop ul li a:hover {
 	background: #ca3d43;
 }
-
+*/
 /*
 #desktop li:hover ul {
     display: block;
@@ -192,7 +196,13 @@ html, body {
 /* will be different for mobile...*/
 
 #desktop ul ul li {
-  font-size: 0.7em;
+  font-size: 0.4em;
+  float: none;
+}
+
+#desktop ul ul li:link, 
+#desktop ul ul li:visited {
+	padding: none;
 }
 
 #desktop ul ul li a{
@@ -267,12 +277,12 @@ background: #3b3b3b;
 }
 
 #left {
-	text-align: justify;
+	text-align: left;
 	padding: 30px 30px 30px 30px;
 }
 
 #right {
-	text-align: justify;
+	text-align: left;
 	padding: 30px 30px 30px 30px;
 }
 
@@ -286,7 +296,7 @@ background: #3b3b3b;
 }
 
 #mainContent {
-	padding: 30px 30px 30px 30px;
+	padding: 30px 0px 30px 0px;
 	text-align: center; 
 }
 

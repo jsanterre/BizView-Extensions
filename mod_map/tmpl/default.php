@@ -27,5 +27,5 @@ $address = $params->get('address', "2nd Floor 472 Stradbrook Avenue Winnipeg");
 </style>
 
 <div class="embed-container">
-  <iframe scrolling="no" frameborder="0" marginheight="0" marginwidth="0" src="https://maps.google.ca/maps?q=<?php echo $address; ?>&iwloc=near&amp;output=embed"></iframe>
+  <iframe scrolling="no" frameborder="0" marginheight="0" marginwidth="0" src="https://maps.google.ca/maps?q=<?php echo $address; ?>&iwloc=near&amp;z=15&amp;output=embed"></iframe>
 </div>

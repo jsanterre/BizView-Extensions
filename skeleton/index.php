@@ -101,13 +101,13 @@
 		<div id="pageContent"> 
 			<div class="row-fluid">
 				<div class="span3" id="left">
-					<a title="BizView - Business - Local Business Directory - Winnipeg Manitoba"><img src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/images/CrockADoodleLogo.png" class="logo" alt="Crock A Doodle"></a>
+					<a title="BizVew - Business - Local Business Directory - Winnipeg Manitoba"><img src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/images/CrockADoodleLogo.png" class="logo" alt="Crock A Doodle"></a>
 					<jdoc:include type="modules" name="left" style="xhtml" />
 				</div>
 				<div class="span6" id="mainContent">
 					<jdoc:include type="message" />
 					<jdoc:include type="component" />
-					<jdoc:include type="modules" name="video" style="none" />
+					<jdoc:include type="modules" name="main" style="none" />
 				</div>
 				<div class="span3" id="right">
 					<jdoc:include type="modules" name="right" style="xhtml" />
@@ -116,10 +116,10 @@
 			
 			<div class="row-fluid">
 				<div id="bottom">
-					<div class="span6" id="left"> 
+					<div class="span7" id="left"> 
 						<jdoc:include type="modules" name="bottom-left" style="xhtml" />
 					</div>
-					<div class="span6" id="right">
+					<div class="span5" id="right">
 						<jdoc:include type="modules" name="bottom-right" style="xhtml" />
 					</div>
 				</div>

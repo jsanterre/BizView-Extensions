@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <extension method="upgrade" version="2.5" type="template" client="site">
 
-    <name>BizViewSkeleton</name>
+    <name>Crock A Doodle</name>
     <creationDate>Feb 2013</creationDate>
     <author>Julie Santerre</author>
     <description>BizView Basic Template</description>
@@ -23,7 +23,7 @@
         <position>right</position>
 		<position>bottom-left</position>
         <position>bottom-right</position>
-		<position>video</position>
+		<position>main</position>
 		<position>bottom</position>
 	</positions>
 
