@@ -81,6 +81,12 @@ html, body {
 	box-shadow: none !important;
 }
 
+.logo {
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 /* css for menu */
 
 .menu {
@@ -109,11 +115,11 @@ html, body {
 /* set active to color: #ca3d43*/
 
 #mobile ul a:hover {
-    color: #e3b110;
+    color: #99472F;
 }
 
 #desktop ul a:hover {
-    color: #e3b110;
+    color: #99472F;
 }
 
 .menu ul a{
@@ -281,7 +287,7 @@ background: #3b3b3b;
 /* css for main content */
 
 #pageContent {
-	background: url(../images/red-background.jpg) no-repeat center top;
+	background: url(../images/background-image.jpg) no-repeat center top;
 	background-repeat:repeat-x;
 	position: relative;
 	margin-bottom: 30px;

@@ -281,7 +281,7 @@ background: #3b3b3b;
 /* css for main content */
 
 #pageContent {
-	background: url(../images/red-background.jpg) no-repeat center top;
+	background: url(../images/background-image.jpg) no-repeat center top;
 	background-repeat:repeat-x;
 	position: relative;
 	margin-bottom: 30px;
