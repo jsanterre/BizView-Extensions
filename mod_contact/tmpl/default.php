@@ -7,8 +7,9 @@ $province = $params->get('province');
 $postalCode = $params->get('postalCode');
 $phone = $params->get('phone');
 $email = $params->get('email');
-$color1 = $params->get('color1');
-$color2 = $params->get('color2');
+$socialgradient1 = $params->get('socialgradient1');
+$socialgradient2 = $params->get('socialgradient2');
+$addressBackground = $params->get('addressBackground');
 ?>
 
 <style type="text/css">
@@ -17,29 +18,37 @@ $color2 = $params->get('color2');
 	font-weight: bold;
 	background: rgba(255, 255, 255, 0.3);
 	padding: 15px;
-}
-#details {
-	padding-top: 20px;
-}
-
-#social {
-	<?php if($color1) {?>
-	background: <?php echo $color1;?>;
 	-webkit-border-radius: 10px;
 	-moz-border-radius: 10px;
 	-o-border-radius: 10px;
 	-ms-border-radius: 10px;
 	-khtml-border-radius: 10px;
 	border-radius: 7px;
-	<?php }?>
+}
+#details {
+	padding-top: 20px;
+}
+
+#social {
+	background: <?php echo $color1;?>;
+
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=<?php echo $socialgradient1;?>, endColorstr=<?php echo $socialgradient2;?>); /* for IE */
+	background: -webkit-gradient(linear, left top, left bottom, from(<?php echo $socialgradient1;?>), to(<?php echo $socialgradient2;?>)); /* for webkit browsers */
+	background: -moz-linear-gradient(top,  <?php echo $socialgradient1;?>,  <?php echo $socialgradient2;?>); /* for firefox 3.6+ */
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-o-border-radius: 10px;
+	-ms-border-radius: 10px;
+	-khtml-border-radius: 10px;
+	border-radius: 7px;
 	text-align: center;
 	height: 40px;
 	line-height: 40px;
 	width: auto;	
 }
-<?php if($color2) {?>
+<?php if($addressBackground) {?>
 #details table {
-	background: <?php echo $color2;?>;
+	background: <?php echo $addressBackground;?>;
 	display: block;
     margin-left: auto;
     margin-right: auto;

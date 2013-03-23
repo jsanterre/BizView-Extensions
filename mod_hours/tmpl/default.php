@@ -18,12 +18,12 @@ $color = $params->get('color');
 }
 #innerhours {
 
-	border-style:solid; 
+	/*border-style:solid; 
 	border-width:10px;
 	border-color:rgba(255, 255, 255, 0.3);
-	
+	*/
 }
-#innerinnerhours {
+#innerhours {
 	background: <?php echo $color;?>;
 	text-align:center !important;
 	font-size: 1em;
@@ -40,7 +40,7 @@ $color = $params->get('color');
 </style>
 
 <div id="hours-info">
-	<div id="innerhours"><div id="innerinnerhours">
+	<div id="innerhours">
 	<div style="text-align:center;">
 		Hours of Operation
 	</div>
@@ -74,6 +74,6 @@ $color = $params->get('color');
 			<td style="text-align:right; font-style:italic; padding-top:10px;"><?php echo $saturday;?></td>
 		</tr>
 	</table>
-	</div></div>
+	</div>
 </div>
 
