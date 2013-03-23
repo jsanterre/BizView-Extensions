@@ -100,7 +100,7 @@ function newPopup(url) {
 		<?php if($email) {?>
 		<tr>
 			<td><img src="<?php JURI::root()?>modules/mod_contact/images/icon-email.png" class="" title="Email"></td>
-			<td><?php echo $email;?></td> 
+			<td style="font-size: 0.9em;"><?php echo $email;?></td> 
 		</tr>
 		<?php }?>
 	</table></div>

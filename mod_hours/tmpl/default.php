@@ -13,16 +13,9 @@ $color = $params->get('color');
 
 <style type="text/css">
 #hours-info {
-	padding-top: 20px;
 	padding-bottom: 20px;
 }
-#innerhours {
 
-	/*border-style:solid; 
-	border-width:10px;
-	border-color:rgba(255, 255, 255, 0.3);
-	*/
-}
 #innerhours {
 	background: <?php echo $color;?>;
 	text-align:center !important;
