@@ -20,6 +20,7 @@
 				<field type="text" name="thursday" default="" label="Thursday" />
 				<field type="text" name="friday" default="" label="Friday" />
 				<field type="text" name="saturday" default="" label="Saturday" />
+				<field type="text" name="color" default="#ffffff" label="Background Color" />
 			</fieldset>
 		</fields>
 	</config>

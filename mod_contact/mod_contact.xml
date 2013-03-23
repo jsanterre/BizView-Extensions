@@ -20,6 +20,8 @@
 				<field type="text" name="postalCode" default="" label="Postal Code" />
 				<field type="text" name="phone" default="" label="Phone Number" />
 				<field type="text" name="email" default="" label="Email Address" />
+				<field type="text" name="color1" default="" label="Social Color" />
+				<field type="text" name="color2" default="" label="Address Color" />
 			</fieldset>
 		</fields>
 	</config>

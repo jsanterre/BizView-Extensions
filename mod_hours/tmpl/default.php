@@ -8,6 +8,7 @@ $wednesday = $params->get('wednesday');
 $thursday = $params->get('thursday');
 $friday = $params->get('friday');
 $saturday = $params->get('saturday');
+$color = $params->get('color');
 ?>
 
 <style type="text/css">
@@ -16,17 +17,25 @@ $saturday = $params->get('saturday');
 	padding-bottom: 20px;
 }
 #innerhours {
+
 	border-style:solid; 
 	border-width:10px;
 	border-color:rgba(255, 255, 255, 0.3);
+	
 }
 #innerinnerhours {
-	background: #f2f2f2;
+	background: <?php echo $color;?>;
 	text-align:center !important;
 	font-size: 1em;
 	padding-top: 20px;
 	padding-bottom: 20px;
 	font-weight: bold;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-o-border-radius: 10px;
+	-ms-border-radius: 10px;
+	-khtml-border-radius: 10px;
+	border-radius: 7px;
 }
 </style>
 

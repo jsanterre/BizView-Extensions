@@ -7,30 +7,52 @@ $province = $params->get('province');
 $postalCode = $params->get('postalCode');
 $phone = $params->get('phone');
 $email = $params->get('email');
+$color1 = $params->get('color1');
+$color2 = $params->get('color2');
 ?>
 
 <style type="text/css">
 .contact-info {
 	text-align: left;
 	font-weight: bold;
+	background: rgba(255, 255, 255, 0.3);
+	padding: 15px;
 }
 #details {
 	padding-top: 20px;
 }
+
 #social {
-	background: #5e2c88;
-	height: 40px;
-	line-height: 40px;
-	width: auto;/*200px;*/
+	<?php if($color1) {?>
+	background: <?php echo $color1;?>;
 	-webkit-border-radius: 10px;
 	-moz-border-radius: 10px;
 	-o-border-radius: 10px;
 	-ms-border-radius: 10px;
 	-khtml-border-radius: 10px;
-	border-radius: 5px;
+	border-radius: 7px;
+	<?php }?>
 	text-align: center;
+	height: 40px;
+	line-height: 40px;
+	width: auto;	
 }
-
+<?php if($color2) {?>
+#details table {
+	background: <?php echo $color2;?>;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+	padding:5px;
+	width: auto;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-o-border-radius: 10px;
+	-ms-border-radius: 10px;
+	-khtml-border-radius: 10px;
+	border-radius: 7px;
+}
+<?php }?>
 </style>
 
 <script type="text/javascript">
@@ -66,8 +88,12 @@ function newPopup(url) {
 			<td><img src="<?php JURI::root()?>modules/mod_contact/images/icon-phone.png" class="" title="Phone"></td>
 			<td><?php echo $phone;?></td>
 		</tr>
+		<?php if($email) {?>
+		<tr>
 			<td><img src="<?php JURI::root()?>modules/mod_contact/images/icon-email.png" class="" title="Email"></td>
 			<td><?php echo $email;?></td> 
+		</tr>
+		<?php }?>
 	</table></div>
 </div>
 

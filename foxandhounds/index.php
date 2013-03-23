@@ -101,7 +101,7 @@
 		<div id="pageContent"> 
 			<div class="row-fluid">
 				<div class="span3" id="left">
-					<a title="BizVew - Business - Local Business Directory - Winnipeg Manitoba"><img src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/images/logo.jpg" class="logo" alt="Crock A Doodle"></a>
+					<a title="BizVew - Business - Local Business Directory - Winnipeg Manitoba"><img src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/images/logo.jpg" class="logo" alt="Fox and Hounds"></a>
 					<jdoc:include type="modules" name="left" style="xhtml" />
 				</div>
 				<div class="span6" id="mainContent">
