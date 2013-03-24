@@ -73,7 +73,10 @@
 	</div>
 			
 	<div class="container-fluid clientPage">
-	
+	<div id="pageContent"> 
+			<div id="background">
+				<img src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/images/background-image.jpg" class="stretch" alt="" />
+			</div>
 		<div id="desktop" class="menu hidden-phone hidden-tablet">
 			<div class="row-fluid">
 				<nav class="span12 navbar">
@@ -98,7 +101,7 @@
 			</div>		
 		</div> 
 		
-		<div id="pageContent"> 
+		<div id="innerPageContent" style="margin-top=100px;">
 			<div class="row-fluid">
 				<div class="span3" id="left">
 					<a title="BizVew - Business - Local Business Directory - Winnipeg Manitoba"><img src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/images/logo.jpg" class="logo" alt="Fox and Hounds"></a>

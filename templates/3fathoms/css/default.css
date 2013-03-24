@@ -1,13 +1,143 @@
+/**********************
+* css for main content 
+***********************/
 
-/* Zapp css, change hover color */
+
+.clientPage {
+	font-family: ‘Palatino Linotype’, ‘Book Antiqua’, Palatino, serif;
+	color: #000000;
+}
+#pageContent {
+	position: relative;
+	margin-bottom: 30px;
+	margin-right: 50px;
+	margin-left: 50px;
+}
+
+#background {
+    width: 100%; 
+    height: auto; 
+    position: fixed; 
+    left: 0px; 
+    top: 0px; 
+    z-index: -1;
+}
+
+.stretch {
+    width:100%;
+    height:auto;
+}
+
+#left {
+	text-align: left;
+	padding: 30px 30px 30px 30px;
+}
+
+#right {
+	text-align: left;
+	padding: 30px 30px 30px 30px;
+}
+
+
+
+
+#innerPageContent {
+	margin-top: 0px;
+}
+
+#mainContent {
+	padding: 30px 0px 30px 0px;
+	text-align: center; 
+}
+
+.logo {
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+
+
+.nav-collapse .navbar-form, .nav-collapse .navbar-search {
+	border-width: 0px !important;
+	box-shadow: none !important;
+}
+
+
+
+/***************
+* css for menu 
+****************/
+
+.menu {
+	background: #5E2C88;
+}
+
+.navbar-inner {
+	/*height: 40px;*/
+}
+  
+.menu ul {
+    padding-top: 10px;
+    list-style-type: none;
+    text-transform: uppercase;
+}
+
+.menu ul a:link,
+.menu ul a:visited {
+    text-decoration: none;
+}
+
+.menu a {
+	font-weight: bold;
+}
+.menu a:hover{
+    color: #79ABB8;
+}
+.menu a{
+	color: #568293;
+}
+.menu .active a{
+	color: black;
+}
+
+#desktop .menu {
+/*	margin-left: 100px; */
+}
+
+/* css specific to menu on desktop and mobile */
+
+#desktop {
+	/*margin-left: -24px;*/
+}
+
+#desktop ul {
+    font-size: 1.2em;
+}
+
+#mobile ul {
+    font-size: 0.9em;
+}
+
+#desktop li {
+    float: left;
+}
+
+#desktop ul a:link,
+#desktop ul a:visited {
+    padding: 30px 15px;
+}
+
+#mobile {
+	margin-left: -25px;
+}
+
+/* Zapp css */
 
 html, body {
     height: 100%;
-}
-
-.clientPage {
-	font-family: Verdana,Georgia,Serif !important;
-	color: #000000 !important;
 }
 	  
 /* Wrapper for page content to push down footer */
@@ -75,257 +205,3 @@ html, body {
 }
   
 /* End of Zapp css */
-
-.nav-collapse .navbar-form, .nav-collapse .navbar-search {
-	border-width: 0px !important;
-	box-shadow: none !important;
-}
-
-.logo {
-	display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-/* css for menu */
-
-.menu {
-	/*background: #5E2C88; look into that later... it is too ugly!!!*/
-}
-
-.navbar-inner {
-	/*height: 40px;*/
-}
-  
-.menu ul {
-    padding: 10px 0 0;
-    list-style-type: none;
-    /*font-family: Georgia, Times, serif;*/
-    text-transform: uppercase;
-	vertical-align: top;
-}
-
-.menu ul a:link,
-.menu ul a:visited {
-    text-decoration: none;
-    font-weight: bold;
-    vertical-align: top;
-}
-
-/* set active to color: #ca3d43*/
-
-#mobile ul a:hover {
-    color: #89B5C2;
-}
-
-#desktop ul a:hover {
-    color: #89B5C2;
-}
-
-.menu ul a{
-	color: black;
-}
-
-/* css specific to menu on desktop and mobile */
-
-#desktop {
-	margin-left: -24px;
-}
-
-#desktop ul {
-    font-size: 1.2em;
-}
-
-#mobile ul {
-    font-size: 0.9em;
-}
-
-#desktop li {
-    float: left;
-}
-
-#desktop ul a:link,
-#desktop ul a:visited {
-    padding: 30px 15px;
-}
-
-#mobile {
-	margin-left: -25px;
-}
-
-/* Styling specific to desktop for drop down menu*/
-/*
-#desktop ul li a {
-    display: block;
-    text-decoration: none;
-    color: #ffffff;
-    border-top: 1px solid #ffffff;
-    padding: 5px 15px 5px 15px;
-    background: #5E2C88;
-    margin-left: 1px;
-    white-space: nowrap;
-	vertical-align: top;
-}
-
-#desktop ul li a:hover {
-	background: #ca3d43;
-}
-*/
-/*
-#desktop li:hover ul {
-    display: block;
-    position: absolute;
-}
-
-#desktop li:hover li {
-    float: none;
-    font-size: 11px;
-}
-
-#desktop li:hover a { 
-	background: #3b3b3b; 
-}
-
-#desktop li:hover li a:hover {
-    background: #1e7c9a;
-}
-
-#desktop ul {
-    font-family: Arial, Verdana;
-    font-size: 14px;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-
-#desktop ul li {
-    display: block;
-    position: relative;
-    float: left;
-}
-
-#desktop li ul {
-    display: none;
-}
-*/
-
-/* css for submenu */
-/* will be different for mobile...*/
-
-#desktop ul ul li {
-  font-size: 0.4em;
-  float: none;
-}
-
-#desktop ul ul li:link, 
-#desktop ul ul li:visited {
-	padding: none;
-}
-
-#desktop ul ul li a{
-  /*color: #ca3d43;*/
-}
-
-/*
-ul {
-    font-family: Arial, Verdana;
-    font-size: 14px;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-
-ul li {
-    display: block;
-    position: relative;
-    float: left;
-}
-
-li ul {
-    display: none;
-}
-
-
-
-
-
-
-Already used*******************************************
-
-li:hover ul {
-    display: block;
-    position: absolute;
-}
-li:hover li {
-    float: none;
-    font-size: 11px;
-}
-li:hover a { background: #3b3b3b; }
-li:hover li a:hover {
-    background: #1e7c9a;
-}
-
-ul li a {
-    display: block;
-    text-decoration: none;
-    color: #ffffff;
-    border-top: 1px solid #ffffff;
-    padding: 5px 15px 5px 15px;
-    background: #1e7c9a;
-    margin-left: 1px;
-    white-space: nowrap;
-}
-ul li a:hover {
-background: #3b3b3b;
-}
-*/
-
-
-
-
-
-/* css for main content */
-
-#pageContent {
-	background: url(../images/background-image.jpg) repeat center top;
-	position: relative;
-	margin-bottom: 30px;
-}
-
-#left {
-	text-align: left;
-	padding: 30px 30px 30px 30px;
-}
-
-#right {
-	text-align: left;
-	padding: 30px 30px 30px 30px;
-}
-
-#bottom{
-	/*background: #ffffff;*/
-}
-
-/* Add the right font family here doest go into custom html module...*/
-.clientPage {
-	
-}
-
-#mainContent {
-	padding: 30px 0px 30px 0px;
-	text-align: center; 
-}
-
-#mainContent h3 {
-	text-align: left;
-}
-
-/*
-.logo {
-	position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
-*/
