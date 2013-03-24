@@ -2,7 +2,9 @@
 * css for main content 
 ***********************/
 
-
+html, body {
+    height: 100%;
+}
 .clientPage {
 	font-family: ‘Palatino Linotype’, ‘Book Antiqua’, Palatino, serif;
 	color: #000000;
@@ -13,7 +15,6 @@
 	margin-right: 50px;
 	margin-left: 50px;
 }
-
 #background {
     width: 100%; 
     height: auto; 
@@ -22,123 +23,90 @@
     top: 0px; 
     z-index: -1;
 }
-
 .stretch {
     width:100%;
     height:auto;
 }
-
-#left {
-	text-align: left;
-	padding: 30px 30px 30px 30px;
-}
-
-#right {
-	text-align: left;
-	padding: 30px 30px 30px 30px;
-}
-
-
-
-
-#innerPageContent {
-	margin-top: 0px;
-}
-
-#mainContent {
-	padding: 30px 0px 30px 0px;
-	text-align: center; 
-}
-
-.logo {
+.myLogo {
 	display: block;
     margin-left: auto;
     margin-right: auto;
 }
-
-
-
-
-
-.nav-collapse .navbar-form, .nav-collapse .navbar-search {
-	border-width: 0px !important;
-	box-shadow: none !important;
+#mainContent {
+	padding-top: 20px;
+	text-align: center; 
 }
-
-
+#left {
+	text-align: left;
+	padding: 20px 30px 20px 30px;
+}
+#right {
+	text-align: left;
+	padding: 20px 30px 20px 30px;
+}
 
 /***************
-* css for menu 
+* CSS for allmenus 
 ****************/
 
-.menu {
-	background: #5E2C88;
-}
-
-.navbar-inner {
-	/*height: 40px;*/
-}
-  
-.menu ul {
-    padding-top: 10px;
+.allmenus ul {
     list-style-type: none;
     text-transform: uppercase;
 }
-
-.menu ul a:link,
-.menu ul a:visited {
+.allmenus ul a:link,
+.allmenus ul a:visited {
     text-decoration: none;
 }
-
-.menu a {
+.allmenus a {
 	font-weight: bold;
 }
-.menu a:hover{
-    color: #79ABB8;
-}
-.menu a{
+.allmenus a{
 	color: #568293;
 }
-.menu .active a{
+.allmenus .active a{
 	color: black;
 }
 
-#desktop .menu {
-/*	margin-left: 100px; */
+/********************
+* CSS for desktopmenu
+*********************/
+
+.desktopmenu  ul li a{
+	border:1px solid #D9ECF4;
+	background: #B0D3DC;
 }
-
-/* css specific to menu on desktop and mobile */
-
-#desktop {
-	/*margin-left: -24px;*/
-}
-
-#desktop ul {
+.desktopmenu ul {
     font-size: 1.2em;
 }
-
-#mobile ul {
-    font-size: 0.9em;
-}
-
-#desktop li {
+.desktopmenu li {
     float: left;
 }
-
-#desktop ul a:link,
-#desktop ul a:visited {
-    padding: 30px 15px;
+.desktopmenu ul a:link,
+.desktopmenu ul a:visited {
+    padding: 5px 15px;
+}
+.desktopmenu a:hover{
+    color: #79ABB8;
+	background: #D9ECF4
 }
 
-#mobile {
-	margin-left: -25px;
+/********************
+* CSS for mobilemenu
+*********************/
+
+.mobilemenu ul {
+    font-size: 0.9em;
+}
+.mobilemenu {
+	margin-left: -30px;
+}
+.mobilemenu a:hover{
+    color: #D9ECF4
 }
 
-/* Zapp css */
-
-html, body {
-    height: 100%;
-}
+/***********
+* Zapp CSS 
+************/
 	  
 /* Wrapper for page content to push down footer */
 #wrap {
@@ -154,7 +122,6 @@ html, body {
 #push, #footer {
     height: 60px;
 }
-
 #footer {
 	background-color: #000000;
 }
@@ -166,13 +133,11 @@ html, body {
 		margin: 0 auto -90px;
 		padding-top: 0px;
 	}
-	
-	.menu {
-		margin-top: -7px;
-	}
-	
 	#pageContent {
-		margin-top: -25px;
+		margin-top: -10px;
+	}
+	#top #left, #mainContent, #top #right {
+		margin-top: -40px;
 	}
 }
 
@@ -182,26 +147,24 @@ html, body {
 		margin: 0 auto -70px;
 		padding-top: 0px;
 	}
-	
 	#push, #footer {
 		height: 40px;
 	}
-	
-	.menu {
-		margin-top: -7px;
-	}
-	
 	#pageContent {
-		margin-top: -25px;
+		margin-top: -10px;
+	}
+	#top #left {
+		margin-top: -40px;
 	}
 }
 
+.nav-collapse .navbar-form, .nav-collapse .navbar-search {
+	border-width: 0px !important;
+	box-shadow: none !important;
+}
 .bizview-login {
 	color: #E8BC05 !important;
 } 
-
 .bizview-login:hover, .bizview-directory:hover {
 	color: #ffffff !important;
 }
-  
-/* End of Zapp css */

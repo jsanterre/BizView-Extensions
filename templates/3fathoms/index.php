@@ -74,10 +74,12 @@
 			
 	<div class="container-fluid clientPage">
 	<div id="pageContent"> 
-			<div id="background">
+	
+		<div id="background">
 				<img src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/images/background-image.jpg" class="stretch" alt="" />
-			</div>
-		<div id="desktop" class="menu hidden-phone hidden-tablet">
+		</div>
+		
+		<div class="allmenus desktopmenu hidden-phone hidden-tablet">
 			<div class="row-fluid">
 				<nav class="span12 navbar">
 					<div class="navbar inner">
@@ -89,7 +91,7 @@
 			</div>		
 		</div> 
 		
-		<div id="mobile" class="menu visible-phone visible-tablet">
+		<div class="allmenus mobilemenu visible-phone visible-tablet">
 			<div class="row-fluid">
 				<nav class="span12 navbar">
 					<div class="navbar inner">
@@ -101,10 +103,10 @@
 			</div>		
 		</div> 
 		
-		<div id="innerPageContent" style="margin-top=100px;">
-			<div class="row-fluid">
+		<div class="row-fluid">
+			<div id="top">
 				<div class="span3" id="left">
-					<a title="BizVew - Business - Local Business Directory - Winnipeg Manitoba"><img src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/images/logo.jpg" class="logo" alt="Fox and Hounds"></a>
+					<a title="BizVew - Business - Local Business Directory - Winnipeg Manitoba"><img src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/images/logo.jpg" class="myLogo" alt="3 Fathoms"></a>
 					<jdoc:include type="modules" name="left" style="xhtml" />
 				</div>
 				<div class="span6" id="mainContent">
@@ -116,27 +118,26 @@
 					<jdoc:include type="modules" name="right" style="xhtml" />
 				</div>
 			</div>
-			
-			<div class="row-fluid">
-				<div id="bottom">
-					<div class="span7" id="left"> 
-						<jdoc:include type="modules" name="bottom-left" style="xhtml" />
-					</div>
-					<div class="span5" id="right">
-						<jdoc:include type="modules" name="bottom-right" style="xhtml" />
-					</div>
+		</div>
+		
+		<div class="row-fluid">
+			<div id="bottom">
+				<div class="span7" id="left"> 
+					<jdoc:include type="modules" name="bottom-left" style="xhtml" />
 				</div>
-			</div>
-			
-			<div class="row-fluid">
-				<div id="very-bottom">
-					<div class="span12"> 
-						<jdoc:include type="modules" name="bottom" style="xhtml" />
-					</div>
+				<div class="span5" id="right">
+					<jdoc:include type="modules" name="bottom-right" style="xhtml" />
 				</div>
 			</div>
 		</div>
 		
+		<div class="row-fluid">
+			<div id="very-bottom">
+				<div class="span12"> 
+					<jdoc:include type="modules" name="bottom" style="xhtml" />
+				</div>
+			</div>
+		</div>
     </div>
     
 	<div id="push"></div>
