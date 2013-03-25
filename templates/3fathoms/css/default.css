@@ -64,7 +64,7 @@ html, body {
 	color: #568293;
 }
 .allmenus .active a{
-	color: black;
+	color: black !important;
 }
 
 /********************

@@ -31,7 +31,6 @@ $addressBackground = $params->get('addressBackground');
 
 #social {
 	background: <?php echo $color1;?>;
-
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=<?php echo $socialgradient1;?>, endColorstr=<?php echo $socialgradient2;?>); /* for IE */
 	background: -webkit-gradient(linear, left top, left bottom, from(<?php echo $socialgradient1;?>), to(<?php echo $socialgradient2;?>)); /* for webkit browsers */
 	background: -moz-linear-gradient(top,  <?php echo $socialgradient1;?>,  <?php echo $socialgradient2;?>); /* for firefox 3.6+ */
