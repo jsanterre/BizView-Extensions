@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension method="upgrade" type="component" version="1.6.0">
+	<name>BizView</name>
+	<creationDate>February 2013</creationDate>
+	<author>Julie Santerre</author>
+	<description>COM_BIZVIEW_DESCRIPTION</description>
+
+	<!-- Run script -->
+	<scriptfile>script.php</scriptfile>
+
+	<!-- Media Section - For backend images -->
+	<media destination="com_bizview" folder="media">
+		<filename>index.html</filename>
+		<folder>images</folder>
+	</media>
+	
+	<!-- Administration Section -->
+	<administration>
+		<menu img="../media/com_bizview/images/logo-16x16.png">COM_BIZVIEW_MENU</menu>
+		<files folder="admin">
+			<filename>index.html</filename>
+			<filename>bizview.php</filename>
+			<filename>controller.php</filename>
+			<folder>views</folder>
+			<folder>models</folder>
+		</files>
+		
+		<!-- Language Section - English only-->
+		<languages folder="admin">
+			<language tag="en-GB">language/en-GB/en-GB.com_bizview.ini</language>
+			<language tag="en-GB">language/en-GB/en-GB.com_bizview.sys.ini</language>
+		</languages>
+	</administration>
+</extension>
