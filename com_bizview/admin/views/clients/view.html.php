@@ -6,13 +6,13 @@ defined('_JEXEC') or die('Restricted access');
 // import Joomla view library
 jimport('joomla.application.component.view');
 
-class BizViewViewBizView extends JView
+class BizViewViewClients extends JView
 {
 	protected $items;
 	
 	public function display($tpl = null) 
 	{
-		$this->items = $this->get('Items');
+		//$this->items = $this->get('Items');
 
 		// Set the toolbar
 		$this->addToolBar();
@@ -33,7 +33,7 @@ class BizViewViewBizView extends JView
 		JToolBarHelper::title(JText::_('COM_BIZVIEW_ADMINISTRATION'), 'bizview');
 		
 		JToolBarHelper::addNew('bizview.add');
-		JToolBarHelper::editList('client.edit');
+		JToolBarHelper::editList('bizview.edit');
 		
 		JToolBarHelper::divider();
 		

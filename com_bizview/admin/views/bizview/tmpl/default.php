@@ -1,7 +1,7 @@
 <?php
 // No direct access to this file
 defined('_JEXEC') or die('Restricted Access');
-?><form action="<?php echo JRoute::_('index.php?option=com_bizview&amp;view=bizview'); ?>" method="post" name="adminForm" id="adminForm">
+?><form action="index.php?option=com_bizview&amp;view=clients" method="post" name="adminForm" id="adminForm">
 	<table class="adminlist">
 		<thead>
 			<tr>
