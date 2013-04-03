@@ -12,7 +12,7 @@ class BizViewViewClient extends JView
 	
 	public function display($tpl = null) 
 	{
-		//$this->item = $this->get('Item');
+		$this->item = $this->get('Item');
 
 		// Set the toolbar
 		$this->addToolBar();
@@ -29,13 +29,12 @@ class BizViewViewClient extends JView
 	 */
 	protected function addToolBar() 
 	{
-		
-		//if($this->item->id) {
+		if($this->item) {
 			JToolBarHelper::title(JText::_('COM_BIZVIEW_EDIT_CLIENTS_TITLE'), 'bizview');
-		//}
-		//else {
-			//JToolBarHelper::title(JText::_('COM_BIZVIEW_ADD_CLIENTS_TITLE'), 'bizview');
-		//}
+		}
+		else {
+			JToolBarHelper::title(JText::_('COM_BIZVIEW_ADD_CLIENTS_TITLE'), 'bizview');
+	    }
 		
 		JToolBarHelper::save('client.save', 'JTOOLBAR_SAVE');
 		JToolBarHelper::save2new('client.save2new', 'JTOOLBAR_SAVE_AND_NEW');
@@ -51,6 +50,6 @@ class BizViewViewClient extends JView
 	protected function setDocument() 
 	{
 		$document = JFactory::getDocument();
-		//$document->addStyleDeclaration('.icon-48-bizview {background-image: url(../media/com_bizview/images/logo-48x48.png);}');
+		$document->addStyleDeclaration('.icon-48-bizview {background-image: url(../media/com_bizview/images/logo-48x48.png);}');
 	}
 }

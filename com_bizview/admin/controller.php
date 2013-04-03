@@ -19,10 +19,11 @@ class BizViewController extends JController
 	function display($cachable = false) 
 	{
 		// set default view if not set
-		JRequest::setVar('view', JRequest::getCmd('view', 'HelloWorlds'));
+		JRequest::setVar('view', JRequest::getCmd('view', 'BizViews'));
 
 		// call parent behavior
 		parent::display($cachable);
+
 	}
 	*/
 }
