@@ -32,7 +32,7 @@ class BizViewViewBizView extends JView
 	{
 		JToolBarHelper::title(JText::_('COM_BIZVIEW_ADMINISTRATION'), 'bizview');
 		
-		JToolBarHelper::addNew('bizview.add');
+		JToolBarHelper::addNew('client.add');
 		JToolBarHelper::editList('client.edit');
 		
 		JToolBarHelper::divider();

@@ -1,7 +1,9 @@
 <?php
 // No direct access to this file
 defined('_JEXEC') or die('Restricted Access');
-?><form action="index.php?option=com_bizview&amp;view=clients" method="post" name="adminForm" id="adminForm">
+?><form action="index.php?option=com_bizview&amp;view=bizview" method="post" name="adminForm" id="adminForm">
+	<input type="hidden" name="task" value="" />
+	<input type="hidden" name="boxchecked" value="0" />
 	<table class="adminlist">
 		<thead>
 			<tr>
@@ -12,8 +14,13 @@ defined('_JEXEC') or die('Restricted Access');
 		<tbody>
 			<?php foreach($this->items as $i=>$item) {?>
 				<tr class="row<?php echo $i%2 ?>">
-					<td style="width: 25px;"><?php echo JHtml::_('grid.id', $i, $item->id);?></td>
-					<td style="text-align: left; color: #285AB3;"><?php echo $item->name;?></td>
+					<td style="width: 25px;">
+						<?php echo JHtml::_('grid.id', $i, $item->id);?>
+					</td>
+					<td style="text-align: left; color: #285AB3;">
+						<a href="<?php echo $item->url; ?>">
+						<?php echo $item->name;?></a>
+					</td>
 				</tr>
 			<?php } ?>
 		</tbody>

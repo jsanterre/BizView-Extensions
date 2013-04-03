@@ -8,11 +8,11 @@ jimport('joomla.application.component.view');
 
 class BizViewViewClient extends JView
 {
-	protected $items;
+	protected $item;
 	
 	public function display($tpl = null) 
 	{
-		$this->items = $this->get('Item');
+		//$this->item = $this->get('Item');
 
 		// Set the toolbar
 		$this->addToolBar();
@@ -37,10 +37,10 @@ class BizViewViewClient extends JView
 			//JToolBarHelper::title(JText::_('COM_BIZVIEW_ADD_CLIENTS_TITLE'), 'bizview');
 		//}
 		
-		JToolBarHelper::save('bizview.save', 'JTOOLBAR_SAVE');
-		JToolBarHelper::save2new('bizview.save2new', 'JTOOLBAR_SAVE_AND_NEW');
+		JToolBarHelper::save('client.save', 'JTOOLBAR_SAVE');
+		JToolBarHelper::save2new('client.save2new', 'JTOOLBAR_SAVE_AND_NEW');
 		
-		JToolBarHelper::cancel('bizview.cancel');
+		JToolBarHelper::cancel('client.cancel');
 	}
 	
 	/**
