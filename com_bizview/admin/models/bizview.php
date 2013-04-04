@@ -8,32 +8,25 @@ jimport('joomla.application.component.modellist');
 class BizViewModelBizView extends JModelList
 {
 	public function getItems() {
-			
-		// Get a reference to the database
-		$db = JFactory::getDbo();
 		
-		// Query the database
-		$query = $db->getQuery(true);      
-		$query->select('*')
-			->from('#__bizview_clients')
-			->order('name');           
-		$db->setQuery($query);   
-		
-		// Get the result and return the userId
-		$items = $db->loadObjectList();  
+		$items = parent::getItems();
 		
 		foreach($items as &$item) {
 			$item->url = 'index.php?option=com_bizview&amp;view=client&amp;layout=edit&id=' . $item->id;//task=client.edit&amp;id=' . $item->id;
 		}
-				
+			
 		return $items;
 	}
 	
-	public function getListQuery() {
+	public function getListQuery() 
+	{
 		$query = parent::getListQuery();
-		
+		// Select all the fields
 		$query->select('*');
-		$query->from('#_modules');
+		// From the bizview_clients table
+		$query->from('#__bizview_clients');
+		$query->order('name');  
+		
 		return $query;
 	}
 }

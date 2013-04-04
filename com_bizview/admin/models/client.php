@@ -20,28 +20,4 @@ class BizViewModelClient extends JModelAdmin
 		return $form;
 	}
 
-	/*
-	public function getItem() {
-			
-		// Get a reference to the database
-		$db = JFactory::getDbo();
-		
-		// Query the database
-		$query = $db->getQuery(true);      
-		$query->select('*')
-			->from('#__bizview_clients')
-			->order('name');           
-		$db->setQuery($query);   
-		
-		// Get the result and return the userId
-		$items = $db->loadObjectList();  
-		
-		//foreach($items as &$item) {
-			//$item->url = 'index.php?option=com_bizview&amp;task=bizview.edit&amp;id=' . $item->id;
-		//}
-				
-		return $items[0];
-	}
-	*/
-
 }
