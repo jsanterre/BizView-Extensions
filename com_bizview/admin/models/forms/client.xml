@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- $Id: helloworld.xml 74 2010-12-01 22:04:52Z chdemko $ -->
+<form>
+	<fieldset>
+		<field
+			name="id"
+			type="hidden"
+			label="JGLOBAL_FIELD_ID_LABEL"
+			description="JGLOBAL_FIELD_ID_DESC"
+			size="10"
+			default="0"
+			readonly="true"
+			class="readonly"
+		/>
+		<field
+			name="name"
+			type="text"
+			label="COM_BIZVIEW_FIELD_CLIENT_NAME_LABEL"
+			class="inputbox"
+			size="30"
+			required="true"
+		/>
+		<field
+			name="address"
+			type="text"
+			label="COM_BIZVIEW_FIELD_CLIENT_ADDRESS_LABEL"
+			class="inputbox"
+			size="30"
+			required="true"
+		/>
+		<field
+			name="city"
+			type="text"
+			label="COM_BIZVIEW_FIELD_CLIENT_CITY_LABEL"
+			class="inputbox"
+			size="30"
+			required="true"
+		/>
+		<field
+			name="postal_code"
+			type="text"
+			label="COM_BIZVIEW_FIELD_CLIENT_POSTAL_CODE_LABEL"
+			class="inputbox"
+			size="30"
+			required="true"
+		/>
+	</fieldset>
+</form>
+

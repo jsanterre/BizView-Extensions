@@ -8,14 +8,19 @@ jimport('joomla.application.component.modeladmin');
 class BizViewModelClient extends JModelAdmin
 {
 	public function getTable($type = 'Client', $prefix = 'BizViewTable', $config  = array()) {
-		return NULL;//JTable::getInstance($type, $prefix $config);
+		return JTable::getInstance($type, $prefix, $config);
+	}
+	
+	protected function loadFormData() {
+		return $this->getItem();
 	}
 	
 	public function getForm($data = array(), $loadData = true) {
-		//$form = this->loadForm();
-		return NULL;//$form;
+		$form = $this->loadForm('com_bizview.client', 'client', array('control' => 'jform', 'load_data' => $loadData));
+		return $form;
 	}
 
+	/*
 	public function getItem() {
 			
 		// Get a reference to the database
@@ -31,11 +36,12 @@ class BizViewModelClient extends JModelAdmin
 		// Get the result and return the userId
 		$items = $db->loadObjectList();  
 		
-		foreach($items as &$item) {
-			$item->url = 'index.php?option=com_bizview&amp;task=bizview.edit&amp;client_id=' . $item->id;
-		}
+		//foreach($items as &$item) {
+			//$item->url = 'index.php?option=com_bizview&amp;task=bizview.edit&amp;id=' . $item->id;
+		//}
 				
-		return $items[2];
+		return $items[0];
 	}
-	
+	*/
+
 }

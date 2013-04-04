@@ -1,7 +1,7 @@
 <?php
 // No direct access to this file
 defined('_JEXEC') or die('Restricted Access');
-?><form action="index.php?option=com_bizview" method="post" name="adminForm" id="adminForm">
+?><form action="index.php?option=com_bizview&amp;view=bizview" method="post" name="adminForm" id="adminForm">
 	<table class="adminlist">
 		<thead>
 			<tr>
@@ -23,9 +23,9 @@ defined('_JEXEC') or die('Restricted Access');
 			<?php } ?>
 		</tbody>		
 	</table>
-	<div>
-		<input type="hidden" name="task" value="" />
-		<input type="hidden" name="boxchecked" value="0" />
-		<?php echo JHtml::_('form.token'); ?>
-	</div>
+	
+	<input type="hidden" name="task" value="" />
+	<input type="hidden" name="boxchecked" value="0" />
+	<?php echo JHtml::_('form.token'); ?>
+	
 </form>
