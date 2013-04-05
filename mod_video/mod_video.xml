@@ -7,13 +7,13 @@
 	<files>
 		<filename module="mod_video">mod_video.php</filename>	
 		<filename>mod_video.xml</filename>
-		<folder>tmpl</folder>
+		<folder>fields</folder>
 		<filename>index.html</filename>	
 	</files>
 	<config>
-		<fields name="params">
+		<fields name="params" addfieldpath="/modules/mod_video/fields">
 			<fieldset name="basic">
-				<field type="text" name="videoId" default="as1vlYPyq1c" label="YouTube Video ID:" />
+				<field name="id" type="clients" label="BizView's Clients:" />
 			</fieldset>
 		</fields>
 	</config>

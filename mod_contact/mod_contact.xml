@@ -7,19 +7,14 @@
 	<files>
 		<filename module="mod_contact">mod_contact.php</filename>
 		<filename>mod_contact.xml</filename>
-		<folder>tmpl</folder>
 		<folder>images</folder>
+		<folder>fields</folder>
 		<filename>index.html</filename>	
 	</files>
 	<config>
-		<fields name="params">
+		<fields name="params" addfieldpath="/modules/mod_contact/fields">
 			<fieldset name="basic">
-				<field type="text" name="address" default="" label="Address" />
-				<field type="text" name="city" default="Winnipeg" label="City" />
-				<field type="text" name="province" default="Manitoba" label="Province" />
-				<field type="text" name="postalCode" default="" label="Postal Code" />
-				<field type="text" name="phone" default="" label="Phone Number" />
-				<field type="text" name="email" default="" label="Email Address" />
+				<field name="id" type="clients" label="BizView's Clients:" />
 				<field type="text" name="socialgradient1" default="#ffffff" label="Social Color Gradient 1" />
 				<field type="text" name="socialgradient2" default="#ffffff" label="Social Color Gradient 2" />
 				<field type="text" name="addressBackground" default="" label="Address Background Color" />

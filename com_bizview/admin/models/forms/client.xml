@@ -37,9 +37,73 @@
 			required="true"
 		/>
 		<field
+			name="province"
+			type="text"
+			label="COM_BIZVIEW_FIELD_CLIENT_PROVINCE_LABEL"
+			class="inputbox"
+			size="30"
+			required="true"
+		/>
+		<field
 			name="postal_code"
 			type="text"
 			label="COM_BIZVIEW_FIELD_CLIENT_POSTAL_CODE_LABEL"
+			class="inputbox"
+			size="30"
+			required="true"
+		/>
+		<field
+			name="phone_number"
+			type="text"
+			label="COM_BIZVIEW_FIELD_CLIENT_PHONE_NUMBER_LABEL"
+			class="inputbox"
+			size="30"
+			required="true"
+		/>
+		<field
+			name="email_address"
+			type="text"
+			label="COM_BIZVIEW_FIELD_CLIENT_EMAIL_ADDRESS_LABEL"
+			class="inputbox"
+			size="30"
+			required="false"
+		/>
+		<field
+			name="video_id"
+			type="text"
+			label="COM_BIZVIEW_FIELD_CLIENT_VIDEO_ID_LABEL"
+			class="inputbox"
+			size="30"
+			required="true"
+		/>
+		<field
+			name="facebook"
+			type="text"
+			label="COM_BIZVIEW_FIELD_CLIENT_FACEBOOK_LABEL"
+			class="inputbox"
+			size="30"
+			required="true"
+		/>
+		<field
+			name="twitter"
+			type="text"
+			label="COM_BIZVIEW_FIELD_CLIENT_TWITTER_LABEL"
+			class="inputbox"
+			size="30"
+			required="true"
+		/>
+		<field
+			name="email_friend"
+			type="text"
+			label="COM_BIZVIEW_FIELD_CLIENT_EMAIL_FRIEND_LABEL"
+			class="inputbox"
+			size="30"
+			required="true"
+		/>
+		<field
+			name="rss"
+			type="text"
+			label="COM_BIZVIEW_FIELD_CLIENT_RSS_LABEL"
 			class="inputbox"
 			size="30"
 			required="true"
