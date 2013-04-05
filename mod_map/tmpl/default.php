@@ -1,7 +1,20 @@
 <?php
 // No direct access
 defined('_JEXEC') or die;
-$address = $params->get('address', "2nd Floor 472 Stradbrook Avenue Winnipeg");
+//$address = $params->get('address', "2nd Floor 472 Stradbrook Avenue Winnipeg");
+
+$cid = 3;
+// Create a new query object.
+$db = JFactory::getDBO();
+$query = $db->getQuery(true);      
+$query->select('*')
+	->from('#__bizview_clients')
+	->where('id = ' .  "'". $cid . "'" );          
+$db->setQuery($query);  
+  
+// Get the result
+$rows = $db->loadObjectList();	
+$address = $rows[0]->address. ' ' . $rows[0]->city;
 ?>
 
 <style type="text/css">

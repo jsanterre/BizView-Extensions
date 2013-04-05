@@ -37,9 +37,6 @@ class BizViewViewBizView extends JView
 		
 		JToolBarHelper::divider();
 		
-		JToolBarHelper::deleteList('bizview.delete');
-		
-		JToolBarHelper::divider();
 		JToolBarHelper::preferences('com_bizview');
 		
 	}

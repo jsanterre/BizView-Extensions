@@ -8,12 +8,14 @@
 		<filename module="mod_map">mod_map.php</filename>
 		<filename>mod_map.xml</filename>
 		<folder>tmpl</folder>
+		<folder>fields</folder>
 		<filename>index.html</filename>	
 	</files>
 	<config>
-		<fields name="params">
+		<fields name="params" addfieldpath="/modules/mod_map/fields">>
 			<fieldset name="basic">
 				<field type="text" name="address" default="2nd Floor 472 Stradbrook Avenue Winnipeg" label="Address" />
+				<field name="id" type="clients" label="BizView's Clients:" />
 			</fieldset>
 		</fields>
 	</config>

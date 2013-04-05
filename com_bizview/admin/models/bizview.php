@@ -12,7 +12,7 @@ class BizViewModelBizView extends JModelList
 		$items = parent::getItems();
 		
 		foreach($items as &$item) {
-			$item->url = 'index.php?option=com_bizview&amp;view=client&amp;layout=edit&id=' . $item->id;//task=client.edit&amp;id=' . $item->id;
+			$item->url = 'index.php?option=com_bizview&amp;task=client.edit&amp;id=' . $item->id;
 		}
 			
 		return $items;
