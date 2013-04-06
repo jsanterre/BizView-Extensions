@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- $Id: helloworld.xml 74 2010-12-01 22:04:52Z chdemko $ -->
 <form>
-	<fieldset>
+	<fieldset name="essential">
 		<field
 			name="id"
 			type="hidden"
@@ -17,7 +17,7 @@
 			type="text"
 			label="COM_BIZVIEW_FIELD_CLIENT_NAME_LABEL"
 			class="inputbox"
-			size="30"
+			size="50"
 			required="true"
 		/>
 		<field
@@ -25,7 +25,7 @@
 			type="text"
 			label="COM_BIZVIEW_FIELD_CLIENT_ADDRESS_LABEL"
 			class="inputbox"
-			size="30"
+			size="50"
 			required="true"
 		/>
 		<field
@@ -33,7 +33,7 @@
 			type="text"
 			label="COM_BIZVIEW_FIELD_CLIENT_CITY_LABEL"
 			class="inputbox"
-			size="30"
+			size="50"
 			required="true"
 		/>
 		<field
@@ -41,7 +41,7 @@
 			type="text"
 			label="COM_BIZVIEW_FIELD_CLIENT_PROVINCE_LABEL"
 			class="inputbox"
-			size="30"
+			size="50"
 			required="true"
 		/>
 		<field
@@ -49,7 +49,7 @@
 			type="text"
 			label="COM_BIZVIEW_FIELD_CLIENT_POSTAL_CODE_LABEL"
 			class="inputbox"
-			size="30"
+			size="50"
 			required="true"
 		/>
 		<field
@@ -57,7 +57,7 @@
 			type="text"
 			label="COM_BIZVIEW_FIELD_CLIENT_PHONE_NUMBER_LABEL"
 			class="inputbox"
-			size="30"
+			size="50"
 			required="true"
 		/>
 		<field
@@ -65,23 +65,27 @@
 			type="text"
 			label="COM_BIZVIEW_FIELD_CLIENT_EMAIL_ADDRESS_LABEL"
 			class="inputbox"
-			size="30"
+			size="50"
 			required="false"
 		/>
+	</fieldset>
+	<fieldset name="media">
 		<field
 			name="video_id"
 			type="text"
 			label="COM_BIZVIEW_FIELD_CLIENT_VIDEO_ID_LABEL"
 			class="inputbox"
-			size="30"
+			size="50"
 			required="true"
 		/>
+	</fieldset>
+	<fieldset name="social">
 		<field
 			name="facebook"
 			type="text"
 			label="COM_BIZVIEW_FIELD_CLIENT_FACEBOOK_LABEL"
 			class="inputbox"
-			size="30"
+			size="100"
 			required="true"
 		/>
 		<field
@@ -89,7 +93,7 @@
 			type="text"
 			label="COM_BIZVIEW_FIELD_CLIENT_TWITTER_LABEL"
 			class="inputbox"
-			size="30"
+			size="100"
 			required="true"
 		/>
 		<field
@@ -97,7 +101,7 @@
 			type="text"
 			label="COM_BIZVIEW_FIELD_CLIENT_EMAIL_FRIEND_LABEL"
 			class="inputbox"
-			size="30"
+			size="100"
 			required="true"
 		/>
 		<field
@@ -105,9 +109,85 @@
 			type="text"
 			label="COM_BIZVIEW_FIELD_CLIENT_RSS_LABEL"
 			class="inputbox"
-			size="30"
+			size="100"
 			required="true"
 		/>
 	</fieldset>
+	<fieldset name="configuration" addfieldpath="administrator/components/com_bizview/fields">
+		<field
+			name="site_url"
+			type="text"
+			label="COM_BIZVIEW_FIELD_CLIENT_URL_LABEL"
+			class="inputbox"
+			size="50"
+			required="true"
+		/>
+		<field
+			name="template"
+			label="COM_BIZVIEW_FIELD_CLIENT_TEMPLATE_LABEL"
+			type="templates"
+			class="imputbox"
+			required="true"
+		/>
+	</fieldset>
+	<fieldset name="hours">
+		<field
+			name="sunday"
+			type="text"
+			label="COM_BIZVIEW_FIELD_SUNDAY_HOURS_LABEL"
+			class="inputbox"
+			size="50"
+			required="true"
+		/>
+		<field
+			name="monday"
+			type="text"
+			label="COM_BIZVIEW_FIELD_MONDAY_HOURS_LABEL"
+			class="inputbox"
+			size="50"
+			required="true"
+		/>
+		<field
+			name="tuesday"
+			type="text"
+			label="COM_BIZVIEW_FIELD_TUESDAY_HOURS_LABEL"
+			class="inputbox"
+			size="50"
+			required="true"
+		/>
+		<field
+			name="wednesday"
+			type="text"
+			label="COM_BIZVIEW_FIELD_WEDNESDAY_HOURS_LABEL"
+			class="inputbox"
+			size="50"
+			required="true"
+		/>
+		<field
+			name="thursday"
+			type="text"
+			label="COM_BIZVIEW_FIELD_THURSDAY_HOURS_LABEL"
+			class="inputbox"
+			size="50"
+			required="true"
+		/>
+		<field
+			name="friday"
+			type="text"
+			label="COM_BIZVIEW_FIELD_FRIDAY_HOURS_LABEL"
+			class="inputbox"
+			size="50"
+			required="true"
+		/>
+		<field
+			name="saturday"
+			type="text"
+			label="COM_BIZVIEW_FIELD_SATURDAY_HOURS_LABEL"
+			class="inputbox"
+			size="50"
+			required="true"
+		/>
+	</fieldset>
+	
 </form>
 

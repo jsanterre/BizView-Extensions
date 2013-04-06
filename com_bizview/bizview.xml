@@ -25,6 +25,7 @@
 			<folder>models</folder>
 			<folder>controllers</folder>
 			<folder>tables</folder>
+			<folder>fields</folder>
 		</files>
 		
 		<!-- Language Section - English only-->

@@ -25,6 +25,13 @@ CREATE TABLE %PREFIX%_bizview_clients (
 
 )
 
+
+ADD `monday` VARCHAR( 255 ) NULL DEFAULT NULL ,
+ADD `tuesday` VARCHAR( 255 ) NULL DEFAULT NULL ,
+ADD `wednesday` VARCHAR( 255 ) NULL DEFAULT NULL ,
+ADD `thursday` VARCHAR( 255 ) NULL DEFAULT NULL ,
+ADD `friday` VARCHAR( 255 ) NULL DEFAULT NULL ,
+ADD `saturday` VARCHAR( 255 ) NULL DEFAULT NULL
 -- Adding entries into the table
 INSERT INTO %PREFIX%_bizview_clients
 (name, address, city, province, postal_code, phone_number, email_address, video_id)
