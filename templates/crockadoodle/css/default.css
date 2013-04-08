@@ -5,27 +5,18 @@
 html, body {
     height: 100%;
 }
-.clientPage {
-	font-family: Gill Sans / Gill Sans MT, sans-serif;
-	color: #000000;
-}
-#pageContent {
+body {
+	background: url(../images/background-image.jpg);
+	background-repeat:repeat-x;
+	/*
 	position: relative;
 	margin-bottom: 30px;
 	margin-right: 50px;
-	margin-left: 50px;
+	margin-left: 50px;*/
 }
-#background {
-    width: 100%; 
-    height: 100%;	
-    position: fixed; 
-    left: 0px; 
-    top: 0px; 
-    z-index: -1;
-}
-.stretch {
-    width:100%;
-    height:100%;
+.clientPage {
+	font-family: Gill Sans / Gill Sans MT, sans-serif;
+	color: #000000;
 }
 .myLogo {
 	display: block;
@@ -60,9 +51,6 @@ html, body {
 .allmenus a {
 	font-weight: bold;
 }
-.allmenus a{
-	color: #CA3D43;
-}
 .allmenus .active a{
 	color: black !important;
 }
@@ -71,8 +59,13 @@ html, body {
 * CSS for desktopmenu
 *********************/
 
+.desktopmenu a{
+	color: white;
+}
 .desktopmenu  ul li a{
-	background: rgba(255, 255, 255, 0.3);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#5E2C88, endColorstr=#B198C5); /* for IE */
+	background: -webkit-gradient(linear, left top, left bottom, from(#5E2C88), to(#B198C5)); /* for webkit browsers */
+	background: -moz-linear-gradient(top,  #5E2C88,  #B198C5); /* for firefox 3.6+ */
 }
 .desktopmenu ul {
     font-size: 1.2em;
@@ -85,14 +78,17 @@ html, body {
     padding: 5px 15px;
 }
 .desktopmenu a:hover{
-    color: #CA3D43;
-	background: rgba(255, 255, 255, 0.6);
+    color: #F4DBDD;
+	background: #A689BD;
 }
 
 /********************
 * CSS for mobilemenu
 *********************/
 
+.mobilemenu a{
+	color: white;
+}
 .mobilemenu ul {
     font-size: 0.9em;
 }
@@ -100,7 +96,7 @@ html, body {
 	margin-left: -30px;
 }
 .mobilemenu a:hover{
-    color: #D9ECF4
+    color: #5E2C88;
 }
 
 /***********
@@ -129,11 +125,15 @@ html, body {
 /* potrait tablets */
 @media (min-width: 768px) and (max-width: 979px) {
 	#wrap {
-		margin: 0 auto -90px;
+		margin: 0 auto -70px;
 		padding-top: 0px;
+	}
+	#push, #footer {
+		height: 50px;
 	}
 	#pageContent {
 		margin-top: -10px;
+		min-height: 1500px;
 	}
 	#top #left, #mainContent, #top #right {
 		margin-top: -40px;
@@ -143,14 +143,15 @@ html, body {
 /* phones */
 @media (max-width: 767px){
 	#wrap {
-		margin: 0 auto -70px;
+		margin: 0 auto -90px;
 		padding-top: 0px;
 	}
 	#push, #footer {
-		height: 40px;
+		height: 50px;
 	}
 	#pageContent {
 		margin-top: -10px;
+		min-height: 1500px;
 	}
 	#top #left {
 		margin-top: -40px;

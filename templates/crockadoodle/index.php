@@ -74,10 +74,10 @@
 			
 	<div class="container-fluid clientPage">
 	<div id="pageContent"> 
-	
+	<!--
 		<div id="background">
-				<img src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/images/background-image.jpg" class="stretch" alt=""/>
-		</div>
+				<img src="<?php// echo $this->baseurl ?>/templates/<?php// echo $this->template ?>/images/background-image.jpg" class="stretch" alt=""/>
+		</div>-->
 		
 		<div class="allmenus desktopmenu hidden-phone hidden-tablet">
 			<div class="row-fluid">

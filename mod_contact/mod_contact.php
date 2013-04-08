@@ -80,6 +80,7 @@ $rss = $rows[0]->rss;
 	border-radius: 7px;
 }
 <?php }?>
+
 </style>
 
 <script type="text/javascript">
@@ -123,4 +124,5 @@ function newPopup(url) {
 		<?php }?>
 	</table></div>
 </div>
+
 

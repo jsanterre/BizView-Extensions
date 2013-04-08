@@ -20,18 +20,39 @@ CREATE TABLE %PREFIX%_bizview_clients (
 	email_address varchar(255),
 	
 	video_id varchar(255),
+	
+	facebook varchar(510),
+	
+	twitter varchar(510),
+	
+	email_friend varchar(255),
+	
+	rss varchar(255),
+	
+	site_url varchar(255),
+	
+	template int(32),
+	
+	sunday varchar(255),
+	
+	monday varchar(255),
+	
+	tuesday varchar(255),
+	
+	wednesday varchar(255),
+	
+	thursday varchar(255),
+	
+	friday varchar(255),
+	
+	saturday varchar(255),
 
     PRIMARY KEY (id)
-
+	
 )
 
 
-ADD `monday` VARCHAR( 255 ) NULL DEFAULT NULL ,
-ADD `tuesday` VARCHAR( 255 ) NULL DEFAULT NULL ,
-ADD `wednesday` VARCHAR( 255 ) NULL DEFAULT NULL ,
-ADD `thursday` VARCHAR( 255 ) NULL DEFAULT NULL ,
-ADD `friday` VARCHAR( 255 ) NULL DEFAULT NULL ,
-ADD `saturday` VARCHAR( 255 ) NULL DEFAULT NULL
+
 -- Adding entries into the table
 INSERT INTO %PREFIX%_bizview_clients
 (name, address, city, province, postal_code, phone_number, email_address, video_id)

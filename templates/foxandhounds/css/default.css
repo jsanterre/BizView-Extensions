@@ -61,7 +61,7 @@ html, body {
 	font-weight: bold;
 }
 .allmenus a{
-	color: #B99883;
+	color: #CD5700;
 }
 .allmenus .active a{
 	color: #FBEDC9;
@@ -131,7 +131,7 @@ html, body {
     height: 60px;
 }
 #footer {
-	/*background-color: #000000;
+	/*background-color: #000000;*/
 }
 
 /* top navbar behaviour changes on tablets and phones, so get rid of the no longer needed padding */
@@ -143,6 +143,7 @@ html, body {
 	}
 	#pageContent {
 		margin-top: -10px;
+		min-height: 1500px;
 	}
 	#top #left, #mainContent, #top #right {
 		margin-top: -40px;
@@ -160,6 +161,7 @@ html, body {
 	}
 	#pageContent {
 		margin-top: -10px;
+		min-height: 1500px;
 	}
 	#top #left {
 		margin-top: -40px;
