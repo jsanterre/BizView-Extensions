@@ -6,7 +6,7 @@ html, body {
     height: 100%;
 }
 .clientPage {
-	font-family: Gill Sans / Gill Sans MT, sans-serif;
+	font-family: Tahoma, Geneva, sans-serif;
 	color: #000000;
 }
 #pageContent {
@@ -60,11 +60,11 @@ html, body {
 .allmenus a {
 	font-weight: bold;
 }
-.allmenus a{
-	color: #C9E9A8;
-}
 .allmenus .active a{
-	color: white !important;
+	color: #E0E0E0 !important;
+}
+.allmenus a{
+	color: #939CDD;
 }
 
 /********************
@@ -72,11 +72,10 @@ html, body {
 *********************/
 
 .desktopmenu a{
-	color: #C9E9A8;
+	color: #939CDD;
 }
 .desktopmenu  ul li a{
-	border:1px solid #C9E9A8;
-	background: #378223;
+	background: #4A0082;
 }
 .desktopmenu ul {
     font-size: 1.2em;
@@ -89,8 +88,8 @@ html, body {
     padding: 5px 15px;
 }
 .desktopmenu a:hover{
-    color: #378223;
-	background: #C9E9A8;
+    color: #4A0082;
+	background: #939CDD;
 }
 
 /********************
@@ -98,7 +97,7 @@ html, body {
 *********************/
 
 .mobilemenu a{
-	color: #378223;
+	color: #4A0082;
 }
 .mobilemenu ul {
     font-size: 0.9em;

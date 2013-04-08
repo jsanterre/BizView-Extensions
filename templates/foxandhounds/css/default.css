@@ -60,9 +60,6 @@ html, body {
 .allmenus a {
 	font-weight: bold;
 }
-.allmenus a{
-	color: #CD5700;
-}
 .allmenus .active a{
 	color: #FBEDC9;
 }
@@ -71,6 +68,9 @@ html, body {
 * CSS for desktopmenu
 *********************/
 
+.desktopmenu a{
+	color: #CD5700;
+}
 .desktopmenu  ul li a{
 	border:1px solid #621E1D;
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#3E1517, endColorstr=#C94634); /* for IE */
@@ -102,6 +102,9 @@ html, body {
 * CSS for mobilemenu
 *********************/
 
+.mobilemenu a{
+	color: #CD5700;
+}
 .mobilemenu ul {
     font-size: 0.9em;
 }
@@ -109,7 +112,7 @@ html, body {
 	margin-left: -30px;
 }
 .mobilemenu a:hover{
-    color: #D9ECF4
+    color: white;
 }
 
 /***********
