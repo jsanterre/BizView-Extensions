@@ -61,19 +61,22 @@ html, body {
 	font-weight: bold;
 }
 .allmenus a{
-	color: #568293;
+	color: #C9E9A8;
 }
 .allmenus .active a{
-	color: black !important;
+	color: white !important;
 }
 
 /********************
 * CSS for desktopmenu
 *********************/
 
+.desktopmenu a{
+	color: #C9E9A8;
+}
 .desktopmenu  ul li a{
-	border:1px solid #D9ECF4;
-	background: #B0D3DC;
+	border:1px solid #C9E9A8;
+	background: #378223;
 }
 .desktopmenu ul {
     font-size: 1.2em;
@@ -86,14 +89,17 @@ html, body {
     padding: 5px 15px;
 }
 .desktopmenu a:hover{
-    color: #79ABB8;
-	background: #D9ECF4;
+    color: #378223;
+	background: #C9E9A8;
 }
 
 /********************
 * CSS for mobilemenu
 *********************/
 
+.mobilemenu a{
+	color: #378223;
+}
 .mobilemenu ul {
     font-size: 0.9em;
 }
@@ -101,7 +107,7 @@ html, body {
 	margin-left: -30px;
 }
 .mobilemenu a:hover{
-    color: #D9ECF4;
+    color: white;
 }
 
 /***********

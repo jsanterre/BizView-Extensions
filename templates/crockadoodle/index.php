@@ -109,12 +109,12 @@
 					<a title="BizVew - Business - Local Business Directory - Winnipeg Manitoba"><img src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/images/logo.png" class="myLogo" alt="3 Fathoms"></a>
 					<jdoc:include type="modules" name="left" style="xhtml" />
 				</div>
-				<div class="span6" id="mainContent">
+				<div class="span5" id="mainContent">
 					<jdoc:include type="message" />
 					<jdoc:include type="component" />
 					<jdoc:include type="modules" name="main" style="none" />
 				</div>
-				<div class="span3" id="right">
+				<div class="span4" id="right">
 					<jdoc:include type="modules" name="right" style="xhtml" />
 				</div>
 			</div>

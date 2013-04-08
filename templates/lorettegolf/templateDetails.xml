@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <extension method="upgrade" version="2.5" type="template" client="site">
 
-    <name>Crock A Doodle</name>
+    <name>Lorette Golf</name>
     <creationDate>Feb 2013</creationDate>
     <author>Julie Santerre</author>
-    <description>BizView Basic Template</description>
+    <description>BizView Template</description>
 
     <files>
 		<folder>images</folder>
