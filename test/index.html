@@ -1,0 +1,48 @@
+<!doctype html>
+
+<html>
+<head>
+
+<script type="text/javascript" src="jquery-1.4.3.min.js"></script>
+<script type="text/javascript" src="fancybox/jquery.easing-1.3.pack.js"></script>
+<script type="text/javascript" src="fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
+<script type="text/javascript" src="fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+<link rel="stylesheet" href="fancybox/jquery.fancybox-1.3.4.css" type="text/css" media="screen">
+
+<script type="text/javascript">
+$(document).ready(function() {
+	
+	$(".fancyYoutube").fancybox({
+		'transitionIn' : 'elastic',
+		'transitionOut': 'fade',
+		'width' : 680,
+		'height' : 495,
+		'type' : 'swf'
+	});
+	
+	if(location.hash) {
+		$(location.hash).click();
+	}
+ 
+});
+</script>
+
+</head>
+<body>
+
+<a class="fancyYoutube" id="vid1" href="https://www.youtube.com/v/u8qNru84pC4"><img src=http://img.youtube.com/vi/u8qNru84pC4/0.jpg alt=""/></a>
+<a class="fancyYoutube" id="vid2" href="https://www.youtube.com/v/_hNll7dqqXc"><img src=http://img.youtube.com/vi/_hNll7dqqXc/0.jpg alt=""/></a>
+<a class="fancyYoutube" id="vid3" href="https://www.youtube.com/v/shzDEUrkJXY"><img src=http://img.youtube.com/vi/shzDEUrkJXY/0.jpg alt=""/></a>
+<a class="fancyYoutube" id="vid4" href="https://www.youtube.com/v/ra9AKf-ZXHc"><img src=http://img.youtube.com/vi/ra9AKf-ZXHc/0.jpg alt=""/></a>
+<a class="fancyYoutube" id="vid5" href="https://www.youtube.com/v/ThiM5MuUFvI"><img src=http://img.youtube.com/vi/ThiM5MuUFvI/0.jpg alt=""/></a>
+<a class="fancyYoutube" id="vid6" href="https://www.youtube.com/v/MbsgWnsSnbI"><img src=http://img.youtube.com/vi/MbsgWnsSnbI/0.jpg alt=""/></a>
+
+</body>
+</html>
+
+<!--
+<script type="text/javascript" src="fancybox/jquery.easing-1.3.pack.js"></script>
+<script type="text/javascript" src="fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
+<script type="text/javascript" src="fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+<link rel="stylesheet" href="fancybox/jquery.fancybox-1.3.4.css" type="text/css" media="screen" />
+-->
