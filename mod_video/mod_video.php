@@ -37,6 +37,7 @@ $videoId = $rows[0]->video_id;
     left: 0;
     width: 100%;
     height: 100%;
+	
 }
 </style>
 
